@@ -108,7 +108,7 @@ a {text-decoration: none;}
 .header-inner {
   margin: 0 auto;
   max-width: 1020px;
-  padding: 10px;
+  padding: 10px 10px 0;
   position: relative;
 }
 #site-title{float:left;font-size:30px;line-height:36px;margin:0 0 18px;width:700px}
@@ -117,13 +117,13 @@ a {text-decoration: none;}
 #branding img{border-top:4px solid #000;border-bottom:1px solid #000;display:block;float:left}
 .header-inner .left {
   float: left;
-  width: 35%;
+  width: 330px;
 }
 .header-inner .right {
   float: left;
   min-height: 200px;
   padding-top: 3%;
-  width: 65%;
+  max-width: 670px;
 }
 .header-inner h1 {
   color: #fff;
@@ -131,6 +131,7 @@ a {text-decoration: none;}
   font-style: initial;
   font-weight: bold;
   line-height: 33px;
+  text-align: center;
 }
 .menu li {
   background: none repeat scroll 0 0 #0577bd;
@@ -138,9 +139,12 @@ a {text-decoration: none;}
   text-align: center;
   width: 85px;
   position: relative;
+  transition: all 0.3s ease 0s;
 }
 .menu li:hover {
-  padding-top: 15px;
+	background: #0577BD !important;
+  padding-top: 25px;
+  transition: all 0.3s ease 0s;
 }
 .menu li:nth-child(2) {
   background: none repeat scroll 0 0 #99BC3C;
@@ -182,7 +186,6 @@ a {text-decoration: none;}
   bottom: 0;
   font-size: 13px;
   position: absolute;
-  width: 928px;
 }
 #access .menu-header ul,div.menu ul{list-style:none;margin:0}
 #access .menu-header li,div.menu li{float:left;position:relative}
