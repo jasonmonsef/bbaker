@@ -55,17 +55,26 @@ input[type="submit"]{font-family:'Josefin Sans',sans-serif}
 pre{font-family:"Courier 10 Pitch",Courier,monospace}
 code{font-family:Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace}
 h1,h2,h3,h4,h5,h6 {font-family: 'Patrick Hand',sans-serif}
-.inner-module > h1 {
-font-family: 'Open Sans', sans-serif;
+.inner-module h1 {
+  font-family: "Open Sans",sans-serif;
   font-size: 40px;
   font-weight: bold;
   line-height: 45px;
+  margin-bottom: 30px;
 }
 .inner-module h2 {
   font-family: "Open Sans",sans-serif;
   font-size: 30px;
   font-weight: bold;
   line-height: 35px;
+}
+.page.services .left {
+  width: 50%;
+  float:left;
+}
+.page.services .right {
+  width: 50%;
+  float:left;
 }
 
 /* =Structure
@@ -260,7 +269,6 @@ li.current-menu-item.current_page_item {background:#0577BD !important;color:#fff
 #content tr th,#content thead th{color:#777;font-size:12px;font-weight:700;line-height:18px;padding:9px 24px}
 #content tr td{border-top:1px solid #e7e7e7;padding:6px 24px}
 #content tr.odd td{background:#f2f7fc}
-.hentry{margin:0 0 48px}
 .home .sticky{background:#f2f7fc;border-top:4px solid #000;margin-left:-20px;margin-right:-20px;padding:18px 20px}
 .single .hentry{margin:0 0 36px}
 .page-title{color:#000;font-size:14px;font-weight:700;margin:0 0 36px}
@@ -528,12 +536,12 @@ img#wpstats{display:block;margin:0 auto 10px}
   margin-bottom: 10px;
 }
 /* services */
-.services {
+body.home .services {
   color: #fff;
   padding-bottom: 55px;
   text-align: center;
 }
-.services h2 {
+body.home .services h2 {
   color: #fff;
   font-size: 30px;
   font-weight: bold;
@@ -574,6 +582,38 @@ a.green {
   padding: 5px 10px;
 }
 
+.type-services {
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+  padding: 10px
+}
+.type-services img {width: 100%;height: auto;margin-bottom: 10px}
+.type-services p {
+	padding: 0px
+}
+.type-services h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.type-teammembers {
+  float: left;
+  margin: 2px;
+  text-align: center;
+}
+.type-teammembers h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.type-teammembers  p{font-size: 14px}
+.inner-module.page.our-team > h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 0 20%;
+  text-align: center;
+}
 /* =Mobile Safari ( iPad, iPhone and iPod Touch )
 -------------------------------------------------------------- */
 
