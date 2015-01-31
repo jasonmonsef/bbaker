@@ -29,6 +29,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
 <?php
 	if ( is_singular() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
@@ -67,8 +68,16 @@
 		</div>
 		
 	</div> <!-- .header-inner -->
-</div><!-- #header -->	
+</div><!-- #header -->
+<div class="header-stopgap"></div>
+<?php if(is_front_page() ) { ?>
 
+	<div id="hero-banner">
+		<div class="hero-logo">
+			<img src="<?php bloginfo('template_url') ?>/images/new/hero-logo.png" style="max-width:241px">
+		</div>
+	</div>
+<?php } ?>
 <div id="wrapper" class="hfeed">
 	
 

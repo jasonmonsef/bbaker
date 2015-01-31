@@ -40,20 +40,41 @@ a img{border:none}
 #footer{clear:both;width:100%}
 .one-column #content{margin:0 auto;width:640px}
 .single-attachment #content{margin:0 auto;width:900px}
-
+.bg-green {background: #A4C543;}
+.bg-red {background: #F03F42;}
+.inner-module {
+  margin: 0 auto;
+  max-width: 1020px;
+  padding: 20px;
+}
 /* =Fonts
 -------------------------------------------------------------- */
-body,input,textarea,.page-title span,.pingback a.url{font-family:'Josefin Sans',sans-serif}
-h3#comments-title,h3#reply-title,#access .menu,#access div.menu ul,#cancel-comment-reply-link,.form-allowed-tags,#site-info,#site-title,#wp-calendar,.comment-meta,.comment-body tr th,.comment-body thead th,.entry-content label,.entry-content tr th,.entry-content thead th,.entry-meta,.entry-title,.entry-utility,#respond label,.navigation,.page-title,.pingback p,.reply,.widget-title,.wp-caption-text{font-family:'Patrick Hand',sans-serif}
+body,input,textarea,.page-title span,.pingback a.url{font-family:'Open Sans',sans-serif}
+h3#comments-title,h3#reply-title,#access .menu,#access div.menu ul,#cancel-comment-reply-link,.form-allowed-tags,#site-info,#site-title,#wp-calendar,.comment-meta,.comment-body tr th,.comment-body thead th,.entry-content label,.entry-content tr th,.entry-content thead th,.entry-meta,.entry-title,.entry-utility,#respond label,.navigation,.page-title,.pingback p,.reply,.widget-title,.wp-caption-text{font-family:'Open Hand',sans-serif}
 input[type="submit"]{font-family:'Josefin Sans',sans-serif}
 pre{font-family:"Courier 10 Pitch",Courier,monospace}
 code{font-family:Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace}
 h1,h2,h3,h4,h5,h6 {font-family: 'Patrick Hand',sans-serif}
+.inner-module > h1 {
+font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 45px;
+}
+.inner-module h2 {
+  font-family: "Open Sans",sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 35px;
+}
+
 /* =Structure
 -------------------------------------------------------------- */
 
-#wrapper{margin:0 auto;width:1020px}
-#wrapper{background:#fff;margin-top:20px;padding:0 20px}
+#wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
 #footer-widget-area{overflow:hidden}
 #footer-widget-area .widget-area{float:left;margin-right:20px;width:220px}
 #footer-widget-area #fourth{margin-right:0}
@@ -66,7 +87,7 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Patrick Hand',sans-serif}
 body {
   background: none repeat scroll 0 0 #ecba63;
 }
-body,input,textarea{color:#666;font-size:12px;line-height:18px}
+body,input,textarea{color:#fff;font-size:12px;line-height:18px}
 hr{background-color:#e7e7e7;border:0;clear:both;height:1px;margin-bottom:18px}
 p{margin-bottom:18px}
 ul{list-style:square;margin:0 0 18px 1.5em}
@@ -103,12 +124,23 @@ a {text-decoration: none;}
   background: none repeat scroll 0 0 #28c8ec;
   border-bottom: 10px solid #0577bd;
   padding: 0;
+  position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 2000;
+  transition: all 0.3s ease 0s;
+}
+#header a img {width:283px;transition: all 0.3s ease 0s;}
+
+#header.scrolling a img {width: 160px;transition: all 0.3s ease 0s;}
+/* #header.scrolling .header-inner .right h1 {display: none;transition: all 0.3s ease 0s;} */
+#header.scrolling .header-inner .right {
+  min-height: auto;
+  transition: all 0.3s ease 0s;
 }
 .header-inner {
   margin: 0 auto;
   max-width: 1020px;
-  padding: 10px 10px 0;
   position: relative;
 }
 #site-title{float:left;font-size:30px;line-height:36px;margin:0 0 18px;width:700px}
@@ -117,13 +149,13 @@ a {text-decoration: none;}
 #branding img{border-top:4px solid #000;border-bottom:1px solid #000;display:block;float:left}
 .header-inner .left {
   float: left;
-  width: 330px;
+  width: 340px;
 }
 .header-inner .right {
   float: left;
+  max-width: 680px;
   min-height: 200px;
   padding-top: 3%;
-  max-width: 670px;
 }
 .header-inner h1 {
   color: #fff;
@@ -131,10 +163,11 @@ a {text-decoration: none;}
   font-style: initial;
   font-weight: bold;
   line-height: 33px;
+  margin-bottom: 20px;
   text-align: center;
 }
 .menu li {
-  background: none repeat scroll 0 0 #0577bd;
+  background: none repeat scroll 0 0 #f9a21d;
   height: 85px;
   text-align: center;
   width: 85px;
@@ -177,15 +210,28 @@ a {text-decoration: none;}
   top: 50%;
   transform: translateY(-50%);
 }
-
+/* =Hero Banner
+-------------------------------------------------------------- */
+.header-stopgap {  margin-top: 178px;
+  position: relative;}
+#hero-banner {
+  background: url("images/new/hero-banner-2.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+  height: 500px;
+  width: 100%;
+}
+.hero-logo {
+  margin: 0 auto;
+  max-width: 241px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 /* =Menu
 -------------------------------------------------------------- */
 
 #access{background:#000;display:block;float:left;margin:0 auto;width:940px}
 #access .menu-header, div.menu {
-  bottom: 0;
   font-size: 13px;
-  position: absolute;
 }
 #access .menu-header ul,div.menu ul{list-style:none;margin:0}
 #access .menu-header li,div.menu li{float:left;position:relative}
@@ -193,16 +239,15 @@ a {text-decoration: none;}
 #access ul ul{box-shadow:0 3px 3px rgba(0,0,0,0.2);-moz-box-shadow:0 3px 3px rgba(0,0,0,0.2);-webkit-box-shadow:0 3px 3px rgba(0,0,0,0.2);display:none;position:absolute;top:38px;left:0;float:left;width:180px;z-index:99999}
 #access ul ul li{min-width:180px}
 #access ul ul ul{left:100%;top:0}
-#access ul ul a{background:#333;line-height:1em;padding:10px;width:160px;height:auto}
-#access li:hover > a,#access ul ul :hover > a{background:#333;color:#fff}
+#access ul ul a{background:#0577BD;line-height:1em;padding:10px;width:160px;height:auto}
+#access li:hover > a,#access ul ul :hover > a{background:#0577BD;color:#fff}
 #access ul li:hover > ul{display:block}
-#access ul li.current_page_item > a,#access ul li.current_page_ancestor > a,#access ul li.current-menu-ancestor > a,#access ul li.current-menu-item > a,#access ul li.current-menu-parent > a{color:#fff}
-* html #access ul li.current_page_item a,* html #access ul li.current_page_ancestor a,* html #access ul li.current-menu-ancestor a,* html #access ul li.current-menu-item a,* html #access ul li.current-menu-parent a,* html #access ul li a:hover{color:#fff}
 
+li.current-menu-item.current_page_item {background:#0577BD !important;color:#fff}
 /* =Content
 -------------------------------------------------------------- */
 
-#main{clear:both;overflow:hidden;padding:40px 0 0}
+#main{clear:both;overflow:hidden;padding:0}
 #content{margin-bottom:36px}
 #content,#content input,#content textarea{color:#333;font-size:16px;line-height:24px}
 #content p,#content ul,#content ol,#content dd,#content pre,#content hr{margin-bottom:24px}
@@ -392,7 +437,12 @@ h3#reply-title{margin:18px 0}
 /* =Footer
 -------------------------------------------------------------- */
 
-#footer{margin-bottom:20px}
+#footer {
+  background: none repeat scroll 0 0 #28c8ec;
+  border-top: 10px solid #0577bd;
+  padding: 20px;
+}
+.footer-inner {max-width: 1020px;margin: 0 auto;}
 #colophon{border-top:4px solid #000;margin-top:-4px;overflow:hidden;padding:18px 0}
 #site-info{font-weight:700}
 #site-info a{color:#000;text-decoration:none}
@@ -400,7 +450,129 @@ h3#reply-title{margin:18px 0}
 #site-generator a{background:url(images/wordpress.png) center left no-repeat;color:#666;display:inline-block;line-height:16px;padding-left:20px;text-decoration:none}
 #site-generator a:hover{text-decoration:underline}
 img#wpstats{display:block;margin:0 auto 10px}
+#footer .left {
+  float: left;
+  width: 18%;
+}
+#footer .right {
+  float: left;
+  width: 82%;
+}
+#footer .right .align-center {
+  float: left;
+  padding-top: 20px;
+  text-align: center;
+  width: 90%;
+}
+#footer .right .algin-right {
+  float: left;
+  text-align: right;
+  width: 10%;
+  
+}
+.align-center > h2 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 45px;
+  text-shadow: 1px 3px 2px #0577bd;
+}
+.align-center > h3 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 1px 3px 2px #0577bd;
+  line-height: 35px
+}
 
+/* =Custom CSS
+-------------------------------------------------------------- */
+/* grid stuff */
+
+.one-third {width:33.3333%;float: left;}
+
+/* intro */
+.intro .left {
+  float: left;
+  padding: 0 20px 0;
+  width: 50%;
+}
+.intro .right {
+  float: left;
+  width: 50%;
+}
+.intro h2.red {
+  color: #f03f42;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 45px;
+}
+.intro h3 {
+  color: #fff;
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.intro h3.red {
+  color: #f03f42;
+  font-size: 35px;
+  line-height: 35px;
+}
+.intro .left img {
+  float: right;
+}
+.intro .left li {
+  color: #fff;
+  font-size: 17px;
+  list-style: outside none disc;
+  margin-bottom: 10px;
+}
+/* services */
+.services {
+  color: #fff;
+  padding-bottom: 55px;
+  text-align: center;
+}
+.services h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.services .one-third > h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.services p {
+  font-size: 16px;
+  padding: 20px;
+  text-align: left
+}
+a.orange {
+  background: none repeat scroll 0 0 #f9a21d;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+a.blue {
+  background: none repeat scroll 0 0 #22C1E9;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+a.green {
+  background: none repeat scroll 0 0 #99BC3C;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 10px;
+}
 
 /* =Mobile Safari ( iPad, iPhone and iPod Touch )
 -------------------------------------------------------------- */
