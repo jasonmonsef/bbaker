@@ -18,7 +18,7 @@ get_header(); ?>
 			<div class="inner-module intro clearfix">
 				<div class="left">
 					<h2 class="red">Welcome</h2>
-					<h3><img src="<?php bloginfo('template_url') ?>/images/new/gerber-baby.jpg" />It is our mission to provide the best dental experience for your child.</h3>
+					<h3><img src="<?php bloginfo('template_url') ?>/images/new/gerber-baby-whitebg.jpg" />It is our mission to provide the best dental experience for your child.</h3>
 					<h3 class="red">What Makes Us Different?</h3>
 					<ul>
 						<li>Laser Technology Eliminates need for Needles.</li>

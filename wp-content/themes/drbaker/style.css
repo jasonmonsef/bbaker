@@ -31,6 +31,11 @@ blockquote:before,blockquote:after{content:'';content:none}
 del{text-decoration:line-through}
 table{border-collapse:collapse;border-spacing:0}
 a img{border:none}
+body.admin-bar #header {
+      position:fixed;
+      top: 28px;
+      z-index: 1000;
+}
 /* =Layout
 -------------------------------------------------------------- */
 #container{float:left;margin:0 -240px 0 0;width:100%}
@@ -40,7 +45,7 @@ a img{border:none}
 #footer{clear:both;width:100%}
 .one-column #content{margin:0 auto;width:640px}
 .single-attachment #content{margin:0 auto;width:900px}
-.bg-green {background: #A4C543;}
+.bg-green {background: #fff;color: #000}
 .bg-red {background: #F03F42;}
 .inner-module {
   margin: 0 auto;
@@ -56,11 +61,14 @@ pre{font-family:"Courier 10 Pitch",Courier,monospace}
 code{font-family:Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace}
 h1,h2,h3,h4,h5,h6 {font-family: 'Patrick Hand',sans-serif}
 .inner-module h1 {
-  font-family: "Open Sans",sans-serif;
+/*   font-family: "Open Sans",sans-serif; */
   font-size: 40px;
   font-weight: bold;
   line-height: 45px;
   margin-bottom: 30px;
+}
+.entry-content > h2 {
+  margin-bottom: 15px;
 }
 .inner-module h2 {
   font-family: "Open Sans",sans-serif;
@@ -96,7 +104,7 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Patrick Hand',sans-serif}
 body {
   background: none repeat scroll 0 0 #ecba63;
 }
-body,input,textarea{color:#fff;font-size:12px;line-height:18px}
+body,input,textarea{color:#fff;font-size:16px;line-height:18px}
 hr{background-color:#e7e7e7;border:0;clear:both;height:1px;margin-bottom:18px}
 p{margin-bottom:18px}
 ul{list-style:square;margin:0 0 18px 1.5em}
@@ -126,6 +134,13 @@ a:visited{color:#743399}
 a:active,a:hover{color:#ff4b33}
 .screen-reader-text{position:absolute;left:-9000px}
 a {text-decoration: none;}
+a.button {
+  border: 3px solid #0577bd;
+  color: #0577bd;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
 /* =Header
 -------------------------------------------------------------- */
 
@@ -144,7 +159,7 @@ a {text-decoration: none;}
 #header.scrolling a img {width: 160px;transition: all 0.3s ease 0s;}
 /* #header.scrolling .header-inner .right h1 {display: none;transition: all 0.3s ease 0s;} */
 #header.scrolling .header-inner .right {
-  min-height: auto;
+  min-height: 116px;
   transition: all 0.3s ease 0s;
 }
 .header-inner {
@@ -221,7 +236,7 @@ a {text-decoration: none;}
 }
 /* =Hero Banner
 -------------------------------------------------------------- */
-.header-stopgap {  margin-top: 178px;
+.header-stopgap {  padding-top: 207px;
   position: relative;}
 #hero-banner {
   background: url("images/new/hero-banner-2.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
@@ -281,7 +296,7 @@ li.current-menu-item.current_page_item {background:#0577BD !important;color:#fff
 .entry-meta{color:#777;font-size:12px}
 .entry-meta abbr,.entry-utility abbr{border:none}
 .entry-meta abbr:hover,.entry-utility abbr:hover{border-bottom:1px dotted #666}
-.entry-content,.entry-summary{clear:both;padding:12px 0 0}
+.entry-content,.entry-summary{clear:both;padding: 0}
 #content .entry-summary p:last-child{margin-bottom:12px}
 .entry-content fieldset{border:1px solid #e7e7e7;margin:0 0 24px;padding:24px}
 .entry-content fieldset legend{background:#fff;color:#000;font-weight:700;padding:0 24px}
@@ -516,7 +531,7 @@ img#wpstats{display:block;margin:0 auto 10px}
   line-height: 45px;
 }
 .intro h3 {
-  color: #fff;
+/*   color: #fff; */
   font-size: 25px;
   line-height: 25px;
   margin-bottom: 10px;
@@ -530,7 +545,7 @@ img#wpstats{display:block;margin:0 auto 10px}
   float: right;
 }
 .intro .left li {
-  color: #fff;
+/*   color: #fff; */
   font-size: 17px;
   list-style: outside none disc;
   margin-bottom: 10px;
@@ -610,10 +625,19 @@ a.green {
 .type-teammembers  p{font-size: 14px}
 .inner-module.page.our-team > h3 {
   font-size: 20px;
-  margin-bottom: 20px;
+  line-height: 23px;
+  margin-bottom: 40px;
   padding: 0 20%;
   text-align: center;
 }
+
+/* about dr baker */
+.doctor {
+  float: left;
+  margin: 1%;
+  width: 48%;
+}
+
 /* =Mobile Safari ( iPad, iPhone and iPod Touch )
 -------------------------------------------------------------- */
 
