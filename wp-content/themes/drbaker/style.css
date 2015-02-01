@@ -135,11 +135,19 @@ a:active,a:hover{color:#ff4b33}
 .screen-reader-text{position:absolute;left:-9000px}
 a {text-decoration: none;}
 a.button {
+  background: none repeat scroll 0 0 #0577bd;
   border: 3px solid #0577bd;
-  color: #0577bd;
+  border-radius: 5px;
+  color: #fff;
   display: inline-block;
   margin-bottom: 10px;
   padding: 5px 10px;
+  transition: all 0.3s ease 0s;
+}
+a.button:hover { 
+	background: none repeat scroll 0 0 #fff;
+	color: #0577bd;
+	transition: all 0.3s ease 0s;
 }
 /* =Header
 -------------------------------------------------------------- */
@@ -635,6 +643,7 @@ a.green {
 .doctor {
   float: left;
   margin: 1%;
+  padding-right: 1.5%;
   width: 48%;
 }
 
