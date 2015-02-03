@@ -58,6 +58,23 @@
 	</div><!-- #footer -->
 
 </div><!-- #wrapper -->
+<div class="switch">
+				<div class="overlay-inner ">
+					<div id="access" role="navigation" style="display: block ! important; float: none; width: 100%; text-align: center; margin-top: 150px;">
+						<ul>
+							
+							<li><a href="<?php bloginfo('url') ?>/portfolio">Our Services</a></li>
+							<li><a href="<?php bloginfo('url') ?>/about">Our Team</a></li>
+							<li><a href="#contact-wrap">Dr. Bruce Baker</a></li>
+							<li><a href="#contact-wrap">New Patients</a></li>
+							<li><a href="#contact-wrap">Rewards Club</a></li>
+							<li><a href="#contact-wrap">Photo Gallery</a></li>
+							<li><a href="#contact-wrap">Contact us</a></li>
+							<li><a href="#contact-wrap">New Patients</a></li>
+						</ul>
+					</div><!-- #access -->
+				</div><!-- .overlay-inner -->
+			</div><!-- .switch -->
 <script>
 	// bind a function to the window's scroll event, this will update
 // the 'active' class every time the user scrolls the window
@@ -78,6 +95,16 @@ jQuery(window).scroll(function() {
     }
 
 });
+
+jQuery('#nav-toggle').click(function(){
+	jQuery('#nav-toggle').toggleClass('active')
+});
+jQuery(document).on('click', '#nav-toggle', function () {
+				jQuery('.switch').addClass('overlay').removeClass('switch').show();
+				jQuery('.overlay').toggleClass('open');
+				jQuery('.trigger-overlay.close').show()
+				jQuery('.gform-wrap').removeClass('expand')
+			});
 </script>
 
 <div class="gform-wrap" style="display:none;">

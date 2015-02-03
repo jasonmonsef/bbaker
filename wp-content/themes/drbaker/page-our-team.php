@@ -12,7 +12,7 @@ get_header(); ?>
 				<h1>Our Team</h1>
 				<h3>Our staff consists of dental professionals with the specialized skills
 to address the oral health needs of infants, children and adolescents.</h3>
-				<div >
+				<div class="clearfix">
 					
 					<?php $services_post = new WP_Query( array( 'post_type' => 'teammembers', 'order' => 'ASC','posts_per_page' => 150  ) ); while($services_post->have_posts()) : $services_post->the_post(); ?>
 

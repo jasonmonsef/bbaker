@@ -48,7 +48,7 @@
 			<a href="<?php bloginfo('url') ?>"><img src="<?php bloginfo('template_url') ?>/images/kidsdentalcare.jpg"/></a>
 		</div>
 		<div class="right">
-			<h1>Kids Dental Care,<br> We make smiles last a lifetime.</h1>
+			<h1>We make smiles last a lifetime.</h1>
 			<span></span>
 			<div class="menu">
 				<!--
@@ -65,6 +65,10 @@
 -->
 				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 			</div>
+			<div id="mobile-menu">
+			<a id="nav-toggle" href="#"><span></span></a>
+			
+		</div>
 		</div>
 		
 	</div> <!-- .header-inner -->

@@ -12,7 +12,7 @@ get_header(); ?>
 				<h1>Photo Gallery</h1>
 				
 
-				<h3>Coming Soon!</h3>
+				<iframe height="1300" frameborder="0" width="100%" scrolling="no" allowfullscreen="" src="http://www.cincopa.com/media-platform/iframe.aspx?fid=AMFAUubyDDQ1"></iframe>
 				
 
  
