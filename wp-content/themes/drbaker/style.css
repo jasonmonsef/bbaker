@@ -76,11 +76,12 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Patrick Hand',sans-serif}
   font-weight: bold;
   line-height: 35px;
 }
-.page.services .left {
+.services-intro .left {
+  float: left;
+  padding-right: 30px;
   width: 50%;
-  float:left;
 }
-.page.services .right {
+.services-intro .right {
   width: 50%;
   float:left;
 }
@@ -546,6 +547,10 @@ img#wpstats{display:block;margin:0 auto 10px}
   padding: 10px;
   width: 33.3333%;
 }
+.one-third > img {
+  height: auto;
+  width: 100%;
+}
 /* intro */
 .intro .left {
   float: left;
@@ -604,7 +609,7 @@ body.home .services h2 {
 }
 .services p {
   font-size: 16px;
-  padding: 20px;
+  padding: 20px 0;
   text-align: left;
 }
 a.orange {
@@ -678,7 +683,12 @@ a.green {
 }
 .location {
   float: left;
-  width: 33.3333%;
+  margin-right: 40px;
+  width: 280px;
+}
+.location img {
+  height: auto;
+  width: 100%;
 }
 /* Mobile Menu */
 /* mobile-menu waaay to much css for this, but it sick, so oh well ;) */
@@ -807,6 +817,87 @@ display: none !important;
   margin-bottom: 10px;
 }
 
+}
+
+@media screen and (max-width: 600px) { 
+	.type-services {
+	  float: none;
+	  padding: 10px;
+	  text-align: center;
+	  width: 100%;
+	}
+	.services-intro .left {
+	  float: none;
+	  padding-right: 30px;
+	  width: 100%;
+	}
+	.services-intro .right {
+	  float: none;
+	  width: 100%;
+	}
+	.intro .left {
+	  float: none;
+	  padding: 0 20px;
+	  width: 100%;
+	}
+	.intro .right {
+	  float: none;
+	  width: 100%;
+	}
+	.intro .right iframe {
+	  float: none;
+	  width: 100%;
+	}
+	.one-third {
+	  float: none;
+	  margin-bottom: 30px;
+	  padding: 10px;
+	  width: 100%;
+	}
+	#footer .left {
+	  display: none;
+	  float: left;
+	  width: 18%;
+	}
+	#footer .right {
+	  float: none;
+	  width: 100%;
+	}
+	#footer .right .align-center {
+	  float: none;
+	  padding-top: 20px;
+	  text-align: center;
+	  width: 100%;
+	}
+	#footer .right .algin-right {
+	  float: none;
+	  margin-top: 20px;
+	  text-align: center;
+	  width: 100%;
+	}
+	.type-teammembers {
+  float: none;
+  margin: 2px;
+  text-align: center;
+  width: 100%;
+}
+.alignleft, img.alignleft {
+  display: block;
+  float: none;
+  margin-right: 24px;
+  margin-top: 4px;
+}
+.doctor {
+  float: none;
+  margin: 1%;
+  padding-right: 1.5%;
+  width: 100%;
+}
+.location {
+  float: none;
+  margin-right: 40px;
+  width: 100%;
+}
 }
 
 /* =Mobile Safari ( iPad, iPhone and iPod Touch )

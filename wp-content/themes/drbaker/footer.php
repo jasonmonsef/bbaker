@@ -62,15 +62,14 @@
 				<div class="overlay-inner ">
 					<div id="access" role="navigation" style="display: block ! important; float: none; width: 100%; text-align: center; margin-top: 150px;">
 						<ul>
-							
-							<li><a href="<?php bloginfo('url') ?>/portfolio">Our Services</a></li>
-							<li><a href="<?php bloginfo('url') ?>/about">Our Team</a></li>
-							<li><a href="#contact-wrap">Dr. Bruce Baker</a></li>
-							<li><a href="#contact-wrap">New Patients</a></li>
-							<li><a href="#contact-wrap">Rewards Club</a></li>
-							<li><a href="#contact-wrap">Photo Gallery</a></li>
-							<li><a href="#contact-wrap">Contact us</a></li>
-							<li><a href="#contact-wrap">New Patients</a></li>
+							<li><a href="<?php bloginfo('url') ?>/">Home</a></li>
+							<li><a href="<?php bloginfo('url') ?>/our-services">Our Services</a></li>
+							<li><a href="<?php bloginfo('url') ?>/our-team">Our Team</a></li>
+							<li><a href="<?php bloginfo('url') ?>/about-dr-baker">Dr. Bruce Baker</a></li>
+							<li><a href="<?php bloginfo('url') ?>/new-patients/">New Patients</a></li>
+							<li><a href="<?php bloginfo('url') ?>/rewards-club/">Rewards Club</a></li>
+							<li><a href="<?php bloginfo('url') ?>/photo-gallery/">Photo Gallery</a></li>
+							<li><a href="<?php bloginfo('url') ?>/contact-us/">Contact us</a></li>
 						</ul>
 					</div><!-- #access -->
 				</div><!-- .overlay-inner -->

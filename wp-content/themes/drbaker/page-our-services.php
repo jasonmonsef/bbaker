@@ -7,7 +7,7 @@
 get_header(); ?>
 
 		<div class="bg-green">
-			<div class="inner-module page services clearfix">
+			<div class="inner-module page services-intro clearfix">
 				<h1>Our Services</h1>
 				<div class="left">
 					<h2>Parents are welcome :)</h2>
