@@ -49,7 +49,6 @@
 		</div>
 		<div class="right">
 			<h1>We make smiles last a lifetime.</h1>
-			<span></span>
 			<div class="menu">
 				<!--
 <ul>

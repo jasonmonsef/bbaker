@@ -898,6 +898,12 @@ display: none !important;
   margin-right: 40px;
   width: 100%;
 }
+.header-inner .right {
+float: left;
+max-width: 680px;
+min-height: 0px !important;
+padding-top: 3%;
+}
 }
 
 /* =Mobile Safari ( iPad, iPhone and iPod Touch )
