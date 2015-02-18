@@ -48,6 +48,7 @@ body.admin-bar #header {
 .bg-green {background: #fff;color: #000}
 .bg-red {background: #F03F42;}
 .inner-module {
+  letter-spacing: 0.5px;
   margin: 0 auto;
   max-width: 1020px;
   padding: 20px;
@@ -166,7 +167,7 @@ a.button.emergency {
 -------------------------------------------------------------- */
 
 #header {
-  background: none repeat scroll 0 0 #28c8ec;
+  background: none repeat scroll 0 0 #2ECEEF;
   border-bottom: 10px solid #0577bd;
   padding: 0;
   position: fixed;
@@ -175,11 +176,15 @@ a.button.emergency {
   z-index: 2000;
   transition: all 0.3s ease 0s;
 }
-#header a img {width:240px;transition: all 0.3s ease 0s;}
-
-#header.scrolling a img {
+#header a img {
+  margin-top: 30px;
   transition: all 0.3s ease 0s;
-  width: 120px;
+  width: 281px;
+}
+#header.scrolling a img {
+  margin-top: 5px;
+  transition: all 0.3s ease 0s;
+  width: 168px;
 }
 
 .header-inner {
@@ -491,9 +496,9 @@ h3#reply-title{margin:18px 0}
 -------------------------------------------------------------- */
 
 #footer {
-  background: none repeat scroll 0 0 #28c8ec;
+  background: none repeat scroll 0 0 #23c1e9;
   border-top: 10px solid #0577bd;
-  padding: 20px;
+  padding: 20px 20px 59px;
 }
 .footer-inner {max-width: 1020px;margin: 0 auto;}
 #colophon{border-top:4px solid #000;margin-top:-4px;overflow:hidden;padding:18px 0}
@@ -692,10 +697,10 @@ a.green {
 }
 /* Mobile Menu */
 /* mobile-menu waaay to much css for this, but it sick, so oh well ;) */
-#nav-toggle { position: absolute; left: 50%; top: 50%; }
+.nav-toggle { position: absolute; left: 50%; top: 50%; }
 
-#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+.nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
   cursor: pointer;
   border-radius: 1px;
   height: 5px;
@@ -705,26 +710,26 @@ a.green {
   display: block;
   content: '';
 }
-#nav-toggle span:before {
+.nav-toggle span:before {
   top: -10px; 
 }
-#nav-toggle span:after {
+.nav-toggle span:after {
   bottom: -10px;
 }
 
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
   transition: all 500ms ease-in-out;
 }
-#nav-toggle.active span {
+.nav-toggle.active span {
   background-color: transparent;
 }
-#nav-toggle.active span:before, #nav-toggle.active span:after {
+.nav-toggle.active span:before, .nav-toggle.active span:after {
   top: 0;
 }
-#nav-toggle.active span:before {
+.nav-toggle.active span:before {
   transform: rotate(45deg);
 }
-#nav-toggle.active span:after {
+.nav-toggle.active span:after {
   transform: rotate(-45deg);
 }
 /* Overlay style */
@@ -778,6 +783,35 @@ a.green {
 	transition: all 0.3s ease 0s;
 }
 
+.secondary-header {
+  background: none repeat scroll 0 0 red;
+  border-radius: 50% 50% 0 0;
+  bottom: 0;
+  box-shadow: 0 0 3px #000;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 1000;
+}
+.secondary-header > a {
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.secondary-header > a:hover {
+	text-shadow: 0px 0px 3px #000;
+	transition: all 0.3s ease 0s;
+}
+
+
+#overlay-wrap-appointment-form .overlay-inner {
+  margin-top: 200px;
+  padding: 20px;
+}
+#overlay-wrap-appointment-form .overlay-inner H2 {
+	margin-bottom: 20px
+}
 /* Responsive Code */
 
 @media screen and (max-width: 1019px) {
@@ -903,6 +937,10 @@ float: left;
 max-width: 680px;
 min-height: 0px !important;
 padding-top: 3%;
+}
+#overlay-wrap-appointment-form .overlay-inner {
+  margin-top: 140px;
+  padding: 20px;
 }
 }
 

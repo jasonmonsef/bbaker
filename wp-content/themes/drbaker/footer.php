@@ -58,22 +58,37 @@
 	</div><!-- #footer -->
 
 </div><!-- #wrapper -->
-<div class="switch">
-				<div class="overlay-inner ">
-					<div id="access" role="navigation" style="display: block ! important; float: none; width: 100%; text-align: center; margin-top: 150px;">
-						<ul>
-							<li><a href="<?php bloginfo('url') ?>/">Home</a></li>
-							<li><a href="<?php bloginfo('url') ?>/our-services">Our Services</a></li>
-							<li><a href="<?php bloginfo('url') ?>/our-team">Our Team</a></li>
-							<li><a href="<?php bloginfo('url') ?>/about-dr-baker">Dr. Bruce Baker</a></li>
-							<li><a href="<?php bloginfo('url') ?>/new-patients/">New Patients</a></li>
-							<li><a href="<?php bloginfo('url') ?>/rewards-club/">Rewards Club</a></li>
-							<li><a href="<?php bloginfo('url') ?>/photo-gallery/">Photo Gallery</a></li>
-							<li><a href="<?php bloginfo('url') ?>/contact-us/">Contact us</a></li>
-						</ul>
-					</div><!-- #access -->
-				</div><!-- .overlay-inner -->
-			</div><!-- .switch -->
+<div class="secondary-header">
+	<a href="#">Click to request an appointment</a>
+</div>
+<div id="overlay-wrap-menu">
+	<div class="switch">
+		<div class="overlay-inner ">
+			<div id="access" role="navigation" style="display: block ! important; float: none; width: 100%; text-align: center; margin-top: 150px;">
+				<ul>
+					<li><a href="<?php bloginfo('url') ?>/">Home</a></li>
+					<li><a href="<?php bloginfo('url') ?>/our-services">Our Services</a></li>
+					<li><a href="<?php bloginfo('url') ?>/our-team">Our Team</a></li>
+					<li><a href="<?php bloginfo('url') ?>/about-dr-baker">Dr. Bruce Baker</a></li>
+					<li><a href="<?php bloginfo('url') ?>/new-patients/">New Patients</a></li>
+					<li><a href="<?php bloginfo('url') ?>/rewards-club/">Rewards Club</a></li>
+					<li><a href="<?php bloginfo('url') ?>/photo-gallery/">Photo Gallery</a></li>
+					<li><a href="<?php bloginfo('url') ?>/contact-us/">Contact us</a></li>
+				</ul>
+			</div><!-- #access -->
+		</div><!-- .overlay-inner -->
+	</div><!-- .switch -->
+</div>
+<div id="overlay-wrap-appointment-form">
+	<div class="switch">
+		<div class="overlay-inner ">
+<!-- 			<a class="nav-toggle" href="#"><span></span></a> -->
+			<h2>REQUEST AN APPOINTMENT</h2>
+			<h3>Fill out the form below to have a representative contact you. Please select a desired date and time for your appointment and we will try our best to accommodate you :)</h3>
+			<?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]'); ?>
+		</div><!-- .overlay-inner -->
+	</div><!-- .switch -->
+</div>
 <script>
 	// bind a function to the window's scroll event, this will update
 // the 'active' class every time the user scrolls the window
@@ -95,20 +110,26 @@ jQuery(window).scroll(function() {
 
 });
 
-jQuery('#nav-toggle').click(function(){
-	jQuery('#nav-toggle').toggleClass('active')
+jQuery('.nav-toggle').click(function(){
+	jQuery('.nav-toggle').toggleClass('active')
 });
-jQuery(document).on('click', '#nav-toggle', function () {
-				jQuery('.switch').addClass('overlay').removeClass('switch').show();
-				jQuery('.overlay').toggleClass('open');
-				jQuery('.trigger-overlay.close').show()
-				jQuery('.gform-wrap').removeClass('expand')
-			});
+jQuery(document).on('click', '.header-inner .nav-toggle', function () {
+	jQuery('#overlay-wrap-menu .switch').addClass('overlay').removeClass('switch').show();
+	jQuery('.overlay').toggleClass('open');
+	jQuery('.trigger-overlay.close').show();
+	
+});
+jQuery(document).on('click', '.secondary-header a', function () {
+	jQuery('#overlay-wrap-appointment-form .switch').addClass('overlay').removeClass('switch').show();
+	jQuery('.overlay').toggleClass('open');
+	jQuery('.trigger-overlay.close').show();
+	
+});
 </script>
 
 <div class="gform-wrap" style="display:none;">
 	<div class="gform-inner">
-		<?php echo do_shortcode('[gravityform id="1" name="No Excuses Sign Up Form" title="false" description="false" ajax="true"]'); ?>
+		<?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
 	</div>
 </div>
 <?php

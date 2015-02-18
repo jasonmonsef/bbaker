@@ -45,7 +45,7 @@
 	</div>
 	<div class="header-inner clearfix" >
 		<div class="left">
-			<a href="<?php bloginfo('url') ?>"><img src="<?php bloginfo('template_url') ?>/images/kidsdentalcare.jpg"/></a>
+			<a href="<?php bloginfo('url') ?>"><img src="<?php bloginfo('template_url') ?>/images/new/kidsdentalcare-v2.png"/></a>
 		</div>
 		<div class="right">
 			<h1>We make smiles last a lifetime.</h1>
@@ -65,19 +65,20 @@
 				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 			</div>
 			<div id="mobile-menu">
-			<a id="nav-toggle" href="#"><span></span></a>
+			<a class="nav-toggle" href="#"><span></span></a>
 			
 		</div>
 		</div>
 		
 	</div> <!-- .header-inner -->
 </div><!-- #header -->
+
 <div class="header-stopgap"></div>
 <?php if(is_front_page() ) { ?>
 
 	<div id="hero-banner">
 		<div class="hero-logo">
-			<img src="<?php bloginfo('template_url') ?>/images/new/hero-logo.png" style="max-width:241px">
+			<img src="<?php bloginfo('template_url') ?>/images/new/hero-logo-v2.png" style="max-width:241px">
 		</div>
 	</div>
 <?php } ?>

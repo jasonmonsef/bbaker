@@ -37,7 +37,7 @@ get_header(); ?>
 						</p>
 					</div>
 					<div class="location">
-						<h2>New Office</h2>
+						<h2>Menifee</h2>
 						<p><img src="<?php bloginfo('template_url') ?>/images/new/temecula1-300x168.jpg" alt="temecula1-300x168"  /></p>
 						<p>
 							42210 Lyndie Lane, Suite 100<br>
