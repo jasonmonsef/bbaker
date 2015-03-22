@@ -20,7 +20,7 @@ get_header(); ?>
 				<div class="location-wrap clearfix">
 					<div class="location">
 						<h2>Temecula Office</h2>
-						<p><img src="<?php bloginfo('template_url') ?>/images/new/temecula-office.jpg"/></p>
+						<p><img src="<?php bloginfo('template_url') ?>/images/new/temecula.jpg"/></p>
 						<p>
 							42210 Lyndie Lane, Suite 100<br>
 							Temecula, CA 92591<br>
@@ -38,12 +38,12 @@ get_header(); ?>
 					</div>
 					<div class="location">
 						<h2>Menifee</h2>
-						<p><img src="<?php bloginfo('template_url') ?>/images/new/menifee_office.jpg"/></p>
+						<p><img src="<?php bloginfo('template_url') ?>/images/new/menifee.jpg"/></p>
 						<p>
-							42210 Lyndie Lane, Suite 100<br>
-							Temecula, CA 92591<br>
-							Phone: (951) 506-1666<br>
-							Fax: (951) 506-1674<br>
+							27180 Newport Road, Suite 3<br>
+							Menifee, CA 92562<br>
+							Phone: (951) 672-1666<br>
+							Fax: (951) 672-8222<br>
 						</p>
 						<p>
 							<h3><strong>OUR HOURS</strong></h3>
