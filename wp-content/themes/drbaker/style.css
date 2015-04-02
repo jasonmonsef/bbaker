@@ -361,7 +361,7 @@ h3#reply-title{margin:18px 0}
 -------------------------------------------------------------- */
 
 #footer {
-  background: none repeat scroll 0 0 #23c1e9;
+  background: none repeat scroll 0 0 #28c8ec;
   border-top: 10px solid #0577bd;
   padding: 20px 20px 59px;
 }
@@ -375,7 +375,7 @@ h3#reply-title{margin:18px 0}
 img#wpstats{display:block;margin:0 auto 10px}
 #footer .left{float:left;width:18%}
 #footer .right{float:left;width:82%}
-#footer .right .align-center{float:left;padding-top:20px;text-align:center;width:90%}
+#footer .right .align-center{float:left;padding-top:10px;text-align:center;width:90%}
 #footer .right .algin-right{float:left;text-align:right;width:10%}
 .align-center > h2{color:#fff;font-size:35px;font-weight:700;line-height:45px;text-shadow:1px 3px 2px #0577bd}
 .align-center > h3{color:#fff;font-size:35px;font-weight:700;text-shadow:1px 3px 2px #0577bd;line-height:35px}

@@ -47,7 +47,8 @@
 			<div class="right">
 				<div class="align-center">
 					<h3>Temecula Office: 951-506-1666</h3>
-					<h3>Center For Advanced Pediatric Dentistry</h3>
+					<h3>Menifee Office: 951-672-1666</h3>
+<!-- 					<h3>Center For Advanced Pediatric Dentistry</h3> -->
 				</div>
 				<div class="algin-right">
 					<a href="#"><img src="<?php bloginfo('template_url') ?>/images/new/icon-facebook.jpg"/></a>
